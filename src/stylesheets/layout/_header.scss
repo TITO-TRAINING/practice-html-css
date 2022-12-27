@@ -1,0 +1,90 @@
+@use "../abstracts/" as *;
+
+header {
+  .navbar {
+    margin-top: 30px;
+    .container-fluid {
+      padding: 0 150px;
+      @include flex($align: center, $justify: space-between);
+      .navbar-brand {
+        font-family: $Second-font;
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 41px;
+        color: $text-color;
+        &:hover {
+          color: $hover-color;
+        }
+      }
+
+      @include tablet {
+        width: 100vw;
+      }
+
+      @include mobile {
+        margin-left: -15px;
+        padding: 16px;
+      }
+      .nav-list {
+        display: flex;
+        font-family: $Second-font;
+        font-size: 17px;
+        line-height: 20px;
+        font-weight: 800;
+        padding: 0;
+        margin: 0;
+
+        &-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          transition: all 0.3s;
+          a {
+            text-transform: uppercase;
+          }
+          .bottom-line {
+            background-color: $primary-color;
+            width: 90%;
+            height: 5px;
+            position: absolute;
+            bottom: 0;
+            transition: all 0.3s;
+          }
+        }
+        .sign-up-item {
+          background-color: $background-color-second;
+          transition: all 0.3s;
+          margin-left: 20px;
+
+          a {
+            color: $background-color;
+          }
+        }
+
+        .sign-up-item:hover {
+          background-color: $background-color-hover;
+        }
+
+        .sign-up-item:hover .nav-sign-up {
+          color: $hover-color;
+        }
+
+        .nav-list-item:hover .bottom-line {
+          height: 100%;
+        }
+
+        .nav-link {
+          line-height: 20px;
+          color: $text-color;
+          z-index: 2;
+          margin: 12px;
+        }
+
+        .nav-link:hover {
+          color: $background-color;
+        }
+      }
+    }
+  }
+}

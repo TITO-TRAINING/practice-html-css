@@ -1,5 +1,5 @@
 @use "../abstracts/" as *;
-@forward "nav";
+@forward "slider";
 
 .container {
   max-width: 1140px;
@@ -12,5 +12,10 @@
   @include mobile {
     padding: 0 15px;
     max-width: inherit;
+  }
+}
+.main-heading-sec {
+  a {
+    text-transform: uppercase;
   }
 }
