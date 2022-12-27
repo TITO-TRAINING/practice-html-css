@@ -1,0 +1,27 @@
+<nav class="navbar">
+  <div class="container-fluid">
+    <a href="javascript:void(0)" class="navbar-brand">
+      <figure>
+        <img src="../../src/assets/icons/mail.svg" alt="brand" />
+        Ninja Mail
+      </figure>
+    </a>
+
+    <ul class="nav-list">
+      <include
+        src="./components/nav-list.html"
+        locals='{
+        "classList": "nav-list-item",
+        "classLink": "nav-link",
+        "list": "[`features`, `pricing`, `services`, `partners`]"
+      }'
+      >
+      </include>
+      <li class="nav-list-item sign-up-item">
+        <a href="javascript:void(0)" class="nav-link nav-sign-up"
+          >sign of free</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
