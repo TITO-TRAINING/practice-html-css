@@ -1,0 +1,25 @@
+@use "functions" as *;
+
+// Font family
+$primary-font: PlayfairDisplay;
+$Second-font: Raleway;
+
+// Breakpoints
+
+$medium: 768px;
+$extra-lager: 1200px;
+
+$mobile: calc($medium - 1px);
+$tablet: calc($extra-lager - 1px);
+
+// Colors
+$primary-color: rgba(75, 168, 125, 1);
+$background-color: #ffffff;
+$background-color-img: rgba(255, 255, 255, 0.5);
+$background-color-second: rgba(75, 168, 125, 1);
+$background-color-hover: rgba(75, 168, 125, 0.3);
+$bg-color-hover-second: rgba(75, 168, 125, 0.2);
+$text-color: rgba(0, 0, 0, 1);
+$main-spacing: pxToRem(-0.58);
+$hover-color: rgba(0, 0, 0, 0.7);
+$box-sadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1608);
