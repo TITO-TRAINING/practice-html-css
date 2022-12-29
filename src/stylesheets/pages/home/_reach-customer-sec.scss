@@ -1,0 +1,87 @@
+@use "../../abstracts/" as *;
+
+.reach-customer-sec {
+  padding: 150px 0;
+  @include tablet {
+    padding: 60px 0;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+
+    @include tablet {
+      max-width: 720px;
+    }
+
+    @include mobile {
+      padding: 0 15px;
+      max-width: inherit;
+    }
+    video {
+      align-self: center;
+      box-shadow: $box-shadow;
+    }
+    @include tablet {
+      video {
+        width: 80%;
+      }
+    }
+
+    .header-part {
+      position: absolute;
+      display: inline-flex;
+      flex-direction: column;
+      z-index: 2;
+
+      .header {
+        color: $background-color;
+        font-family: $primary-font;
+        font-weight: 900;
+        font-size: 3.8rem;
+        margin-bottom: 30px;
+        margin-bottom: 60px;
+        @include tablet {
+          font-weight: 900;
+          font-size: 38px;
+          line-height: 51px;
+        }
+      }
+
+      .header-links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .learn-how {
+          border: none;
+          outline: none;
+          padding: 15px 40px;
+          background-color: $background-color;
+          color: $primary-color;
+          font-family: $Second-font;
+          font-weight: 900;
+          font-size: 21px;
+          line-height: 25px;
+          transition: all 0.3s;
+          text-transform: uppercase;
+          @include tablet {
+            padding: 10px 25px;
+            font-weight: 900;
+            font-size: 13px;
+            line-height: 15px;
+          }
+
+          &:hover {
+            background-color: $primary-color;
+            color: $background-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -2,14 +2,28 @@
 
 .main-heading-sec {
   padding: 100px 0;
+  @include tablet {
+    padding: 50px 0;
+  }
   .container {
     display: flex;
     justify-content: flex-start;
     position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+
+    @include tablet {
+      max-width: 720px;
+    }
+
+    @include mobile {
+      padding: 0 15px;
+      max-width: inherit;
+    }
 
     .main-girl {
       position: absolute;
-      right: 0;
+      right: 30px;
       align-self: center;
       width: 65%;
       box-shadow: $box-sadow;
@@ -23,6 +37,11 @@
       display: inline-flex;
       flex-direction: column;
       z-index: 2;
+      @include tablet {
+        width: 45%;
+        margin-top: 14px;
+        margin-left: 0px;
+      }
 
       .header {
         font-family: $Second-font;
@@ -30,6 +49,12 @@
         font-size: 59px;
         margin-bottom: 30px;
         line-height: 69px;
+        @include tablet {
+          font-weight: 900;
+          font-size: 38px;
+          margin-bottom: 30px;
+          line-height: 46px;
+        }
       }
 
       .header-p {
@@ -37,6 +62,11 @@
         font-weight: 500;
         font-size: 18px;
         margin-bottom: 26px;
+        @include tablet {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+        }
       }
 
       .header-links {
@@ -54,6 +84,15 @@
           font-size: 18px;
           line-height: 25px;
           transition: all 0.3s;
+          @include tablet {
+            padding: 10px 0px;
+            width: 131px;
+            height: 42px;
+            font-weight: 900;
+            font-size: 13px;
+            line-height: 15px;
+            text-align: center;
+          }
         }
 
         .get-demo {
@@ -67,6 +106,15 @@
           line-height: 25px;
           transition: all 0.3s;
           margin: 0 40px;
+          @include tablet {
+            padding: 10px 0px;
+            width: 131px;
+            height: 42px;
+            font-weight: 900;
+            font-size: 13px;
+            line-height: 15px;
+            text-align: center;
+          }
         }
 
         .try-now:hover {

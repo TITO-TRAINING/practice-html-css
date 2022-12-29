@@ -4,26 +4,24 @@ header {
   .navbar {
     margin-top: 30px;
     .container-fluid {
-      padding: 0 150px;
+      padding: 0 100px;
       @include flex($align: center, $justify: space-between);
+      @include tablet {
+        padding: 0 50px;
+      }
       .navbar-brand {
         font-family: $Second-font;
         font-weight: 900;
         font-size: 35px;
         line-height: 41px;
         color: $text-color;
+        @include tablet {
+          font-size: 22px;
+          line-height: 26px;
+        }
         &:hover {
           color: $hover-color;
         }
-      }
-
-      @include tablet {
-        width: 100vw;
-      }
-
-      @include mobile {
-        margin-left: -15px;
-        padding: 16px;
       }
       .nav-list {
         display: flex;
@@ -33,6 +31,11 @@ header {
         font-weight: 800;
         padding: 0;
         margin: 0;
+        @include tablet {
+          font-size: 11px;
+          line-height: 13px;
+          font-weight: 800;
+        }
 
         &-item {
           display: flex;
