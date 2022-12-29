@@ -42,6 +42,6 @@
 @mixin bg-img($bg: "") {
   background-image: url($bg);
   background-repeat: no-repeat;
-  background-position: $bg-position;
+  background-position: center;
   background-size: cover;
 }
