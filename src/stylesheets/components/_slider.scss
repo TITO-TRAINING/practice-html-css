@@ -9,20 +9,10 @@
     display: flex;
     justify-content: flex-start;
     position: relative;
-    max-width: 1140px;
-    margin: 0 auto;
-
-    @include tablet {
-      max-width: 720px;
-    }
-
-    @include mobile {
-      padding: 0 15px;
-      max-width: inherit;
-    }
 
     .main-girl {
       position: absolute;
+      right: 0;
       align-self: center;
       width: 65%;
       box-shadow: $box-shadow;
