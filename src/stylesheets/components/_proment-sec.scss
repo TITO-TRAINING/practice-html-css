@@ -6,24 +6,36 @@
     align-items: center;
     justify-content: center;
     position: relative;
-
+    flex-direction: row;
+    @include mobile {
+      flex-direction: column;
+    }
     .cards {
       min-height: 550px;
       display: flex;
+      flex-direction: row;
+      @include mobile {
+        flex-direction: column;
+        gap: 30px;
+      }
       .card1 {
         display: flex;
         align-items: flex-start;
+        @include mobile {
+          margin-right: 102px;
+        }
       }
       .card2 {
         display: flex;
         align-items: flex-end;
+        @include mobile {
+          margin-left: 102px;
+        }
       }
       .card {
-        width: 360px;
         margin: 0 25px;
         background-color: $background-color;
         position: relative;
-
         box-shadow: $box-shadow-second;
 
         img {
@@ -34,10 +46,15 @@
         .texts {
           padding: 30px;
           font-family: $Second-font;
-
           p {
+            font-size: 16px;
             line-height: 30px;
             font-weight: 500;
+            @include tablet {
+              line-height: 16px;
+              font-weight: 500;
+              font-size: 12px;
+            }
           }
         }
       }
@@ -45,12 +62,22 @@
 
     .heading {
       margin: 25px;
+      max-width: 365px;
+      @include tablet {
+        margin: 15px;
+        max-width: 232px;
+      }
       h2 {
         font-family: $primary-font;
         font-size: 44px;
         font-weight: 900;
         line-height: 48px;
         margin: 30px 0;
+        @include tablet {
+          line-height: 31px;
+          font-weight: 900;
+          font-size: 28px;
+        }
       }
 
       p {
@@ -59,6 +86,11 @@
         font-weight: 500;
         font-size: 19px;
         font-style: normal;
+        @include tablet {
+          line-height: 16px;
+          font-weight: 500;
+          font-size: 12px;
+        }
       }
     }
   }
