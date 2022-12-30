@@ -17,9 +17,21 @@ $primary-color: rgba(75, 168, 125, 1);
 $background-color: #ffffff;
 $background-color-img: rgba(255, 255, 255, 0.5);
 $background-color-second: rgba(75, 168, 125, 1);
+$background-color-third: linear-gradient(
+  0deg,
+  #000000 -32.5%,
+  rgba(84, 84, 84, 0.0001) 67.78%
+);
 $background-color-hover: rgba(75, 168, 125, 0.3);
 $bg-color-hover-second: rgba(75, 168, 125, 0.2);
 $text-color: rgba(0, 0, 0, 1);
 $main-spacing: pxToRem(-0.58);
 $hover-color: rgba(0, 0, 0, 0.7);
 $box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1608);
+$box-shadow-second: 0 0 30px -15px rgba(
+    $color: #000000,
+    $alpha: 0.6,
+  );
+$box-shadow-third: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+$text-color-second: #4ba87d;
+$boder-color: 1px solid #9f9f9f;
