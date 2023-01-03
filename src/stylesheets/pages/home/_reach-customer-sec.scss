@@ -1,7 +1,6 @@
 @use "../../abstracts/" as *;
-
 .reach-customer-sec {
-  padding: 150px 0;
+  padding: 100px 0;
   @include tablet {
     padding: 60px 0;
   }

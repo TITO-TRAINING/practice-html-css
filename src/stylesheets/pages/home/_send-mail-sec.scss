@@ -1,0 +1,175 @@
+@use "../../abstracts/" as *;
+#send-email-sec {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 70px 0;
+
+    .cards {
+      display: flex;
+      margin-top: 100px;
+
+      .card {
+        margin: auto 25px;
+        background-color: $background-color;
+        position: relative;
+
+        box-shadow: $box-shadow-second;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: $background-color-third;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .texts {
+          position: absolute;
+          z-index: 20;
+          top: 65%;
+          left: 10%;
+          display: flex;
+          flex-direction: column;
+
+          .customer-name {
+            font-family: $Second-font;
+            color: $background-color;
+            font-size: 34px;
+            line-height: 40px;
+            font-weight: 900;
+            @include tablet {
+              font-size: 22px;
+              line-height: 26px;
+              font-weight: 900;
+            }
+          }
+
+          .year {
+            font-family: $Second-font;
+            color: $background-color;
+            font-size: 19px;
+            line-height: 22px;
+            font-weight: 700;
+            @include tablet {
+              font-size: 12px;
+              line-height: 14px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      .card1 {
+        margin-bottom: auto;
+      }
+
+      .card2 {
+        margin-top: auto;
+      }
+    }
+
+    .heading {
+      padding: 20px 100px;
+      margin: 25px 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &-learn {
+        font-family: $primary-font;
+        font-size: 44px;
+        font-weight: 900;
+        margin: 30px 0;
+        line-height: 48px;
+        text-align: center;
+        @include tablet {
+          font-size: 28px;
+          line-height: 36px;
+          font-weight: 900;
+          padding: 20px 100px;
+          margin: 25px 50px;
+        }
+      }
+
+      .input-field {
+        input {
+          padding: 12px 40px;
+          background: $background-color;
+          border: $boder-color;
+          box-sizing: border-box;
+          border-radius: 5px;
+          outline: none;
+          margin-right: 30px;
+          font-size: 21px;
+          line-height: 25px;
+          font-weight: 500;
+        }
+
+        button {
+          padding: 12px 40px;
+          background-color: $primary-color;
+          border: 0px solid $primary-color;
+          color: $background-color;
+          font-family: $Second-font;
+          font-weight: 900;
+          font-size: 21px;
+          line-height: 25px;
+          transition: all 0.3s;
+
+          &:hover {
+            background-color: $background-color-hover;
+            color: $hover-color;
+            border-color: $bg-color-hover-second;
+          }
+        }
+      }
+      p {
+        color: $text-color-second;
+        font-family: $Second-font;
+      }
+      &-ads {
+        margin-top: 60px;
+        width: 50%;
+        display: flex;
+        h2 {
+          font-family: $primary-font;
+          font-weight: 900;
+          font-size: 44px;
+          line-height: 48px;
+          text-align: center;
+          @include tablet {
+            font-weight: 900;
+            font-size: 28px;
+            line-height: 36px;
+            margin: 0px 50px;
+          }
+        }
+      }
+
+      &-links {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+          margin: 10px;
+          &:hover {
+            box-shadow: $box-shadow-third;
+          }
+        }
+      }
+    }
+  }
+}
