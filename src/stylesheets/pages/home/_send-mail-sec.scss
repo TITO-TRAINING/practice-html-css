@@ -13,7 +13,6 @@
       margin-top: 100px;
 
       .card {
-        width: 360px;
         margin: auto 25px;
         background-color: $background-color;
         position: relative;
@@ -81,13 +80,13 @@
     }
 
     .heading {
-      margin: 25px 150px;
+      padding: 20px 100px;
+      margin: 25px 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
-      h2 {
+      &-learn {
         font-family: $primary-font;
         font-size: 44px;
         font-weight: 900;
@@ -98,30 +97,33 @@
           font-size: 28px;
           line-height: 36px;
           font-weight: 900;
+          padding: 20px 100px;
+          margin: 25px 50px;
         }
       }
 
       .input-field {
         input {
-          width: 410px;
-          height: 60px;
-          padding: 10px;
+          padding: 12px 40px;
           background: $background-color;
           border: $boder-color;
           box-sizing: border-box;
           border-radius: 5px;
           outline: none;
           margin-right: 30px;
+          font-size: 21px;
+          line-height: 25px;
+          font-weight: 500;
         }
 
         button {
           padding: 12px 40px;
           background-color: $primary-color;
-          border: 2px solid $primary-color;
+          border: 0px solid $primary-color;
           color: $background-color;
           font-family: $Second-font;
           font-weight: 900;
-          font-size: 18px;
+          font-size: 21px;
           line-height: 25px;
           transition: all 0.3s;
 
@@ -136,23 +138,36 @@
         color: $text-color-second;
         font-family: $Second-font;
       }
-      .ads {
+      &-ads {
         margin-top: 60px;
         width: 50%;
+        display: flex;
+        h2 {
+          font-family: $primary-font;
+          font-weight: 900;
+          font-size: 44px;
+          line-height: 48px;
+          text-align: center;
+          @include tablet {
+            font-weight: 900;
+            font-size: 28px;
+            line-height: 36px;
+            margin: 0px 50px;
+          }
+        }
       }
 
-      .links {
+      &-links {
         margin-top: 40px;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-      }
-
-      a {
-        margin: 10px;
-        &:hover {
-          box-shadow: $box-shadow-third;
+        a {
+          margin: 10px;
+          &:hover {
+            box-shadow: $box-shadow-third;
+          }
         }
       }
     }
