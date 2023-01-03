@@ -2,16 +2,22 @@
 
 .reach-customer-sec {
   padding: 150px 0;
-
+  @include tablet {
+    padding: 60px 0;
+  }
   .container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-
-    .img-reach {
+    video {
       align-self: center;
       box-shadow: $box-shadow;
+    }
+    @include tablet {
+      video {
+        width: 80%;
+      }
     }
 
     .header-part {
@@ -27,6 +33,11 @@
         font-size: 3.8rem;
         margin-bottom: 30px;
         margin-bottom: 60px;
+        @include tablet {
+          font-weight: 900;
+          font-size: 38px;
+          line-height: 51px;
+        }
       }
 
       .header-links {
@@ -47,6 +58,12 @@
           line-height: 25px;
           transition: all 0.3s;
           text-transform: uppercase;
+          @include tablet {
+            padding: 10px 25px;
+            font-weight: 900;
+            font-size: 13px;
+            line-height: 15px;
+          }
 
           &:hover {
             background-color: $primary-color;
