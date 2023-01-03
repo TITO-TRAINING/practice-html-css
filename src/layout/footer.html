@@ -1,0 +1,60 @@
+<footer class="footer">
+  <div class="container">
+    <div class="top">
+      <div class="logo">
+        <img src="../../src/assets/icons/mail.svg" alt="" />
+        <span>NinjaMail</span>
+      </div>
+
+      <div class="contents">
+        <div>
+          <include
+            src="./components/list-footer.html"
+            locals='{
+              "list": "[`Featuring`, `Pricing`, `services`, `partners`]"
+            }'
+          >
+          </include>
+        </div>
+        <div>
+          <include
+            src="./components/list-footer.html"
+            locals='{
+              "list": "[`About Us`, `Tutorials`, `Resourcesces`, `Help Center`, `Templates`,`Case Studies`]"
+            }'
+          >
+          </include>
+        </div>
+        <div>
+          <include
+            src="./components/list-footer.html"
+            locals='{
+            "list": "[`Medium`, `Twitter`, `Facebook`, `Instagram`, `Linkedin`]"
+          }'
+          >
+          </include>
+        </div>
+        <div>
+          <include
+            src="./components/list-footer.html"
+            locals='{
+          "list": "[`Contact Us`, `Slack`, `Jobs`]"
+        }'
+          >
+          </include>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="bottom">
+      <span
+        >NinjaMail is a sample project for Quest AI. © 2019 Quest AI, All rights
+        reserved.</span
+      >
+      <a href="javascript:void(0)">Terms & Conditions</a>
+      <a href="javascript:void(0)">Privacy Policy</a>
+    </div>
+  </div>
+</footer>

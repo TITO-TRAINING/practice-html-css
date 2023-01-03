@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 @forward "slider";
 @forward "proment-sec";
+@forward "start-today-sec";
 .container {
   max-width: 1140px;
   margin: 0 auto;
