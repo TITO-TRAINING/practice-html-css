@@ -16,6 +16,9 @@
       align-self: center;
       width: 65%;
       box-shadow: $box-shadow;
+      @include mobile {
+        width: 100%;
+      }
     }
 
     .header-part {

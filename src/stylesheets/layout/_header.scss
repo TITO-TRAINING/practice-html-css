@@ -2,9 +2,10 @@
 
 header {
   .navbar {
+    width: 100%;
+    @include flex($direction: column);
     margin-top: 30px;
     .container-fluid {
-      padding: 0 100px;
       @include flex($align: center, $justify: space-between);
       @include tablet {
         padding: 0 50px;
@@ -35,6 +36,15 @@ header {
           font-size: 11px;
           line-height: 13px;
           font-weight: 800;
+        }
+        @include mobile {
+          .list-item1 {
+            display: none;
+          }
+          .sign-up-item {
+            margin: 0;
+            padding: 0;
+          }
         }
 
         &-item {
