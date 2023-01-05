@@ -1,4 +1,4 @@
-@use "../../abstracts/" as *;
+@use "../abstracts/" as *;
 #send-email-sec {
   .container {
     display: flex;
@@ -11,14 +11,16 @@
     .cards {
       display: flex;
       margin-top: 100px;
+      gap: 30px;
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+      }
 
       .card {
-        margin: auto 25px;
         background-color: $background-color;
         position: relative;
-
         box-shadow: $box-shadow-second;
-
         &::after {
           content: "";
           position: absolute;
@@ -61,7 +63,7 @@
             font-size: 19px;
             line-height: 22px;
             font-weight: 700;
-            @include tablet {
+            @include mobile {
               font-size: 12px;
               line-height: 14px;
               font-weight: 700;
@@ -86,6 +88,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      @include mobile {
+        padding: 20px 50px;
+        margin: 25px 25px;
+      }
       &-learn {
         font-family: $primary-font;
         font-size: 44px;
@@ -100,9 +106,25 @@
           padding: 20px 100px;
           margin: 25px 50px;
         }
+        @include mobile {
+          font-size: 26px;
+          line-height: 36px;
+          font-weight: 900;
+          padding: 20px 100px;
+          margin: 25px 50px;
+        }
       }
 
       .input-field {
+        @include mobile {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          button {
+            order: 3;
+          }
+        }
         input {
           padding: 12px 40px;
           background: $background-color;
@@ -110,10 +132,15 @@
           box-sizing: border-box;
           border-radius: 5px;
           outline: none;
-          margin-right: 30px;
           font-size: 21px;
           line-height: 25px;
           font-weight: 500;
+          @include tablet {
+            font-size: 13px;
+            line-height: 15px;
+            font-weight: 500;
+            padding: 12px 40px;
+          }
         }
 
         button {
@@ -126,7 +153,12 @@
           font-size: 21px;
           line-height: 25px;
           transition: all 0.3s;
-
+          @include tablet {
+            font-size: 13px;
+            line-height: 15px;
+            font-weight: 500;
+            padding: 12px 40px;
+          }
           &:hover {
             background-color: $background-color-hover;
             color: $hover-color;
@@ -135,11 +167,10 @@
         }
       }
       p {
-        color: $text-color-second;
+        color: $text-color-third;
         font-family: $Second-font;
       }
       &-ads {
-        margin-top: 60px;
         width: 50%;
         display: flex;
         h2 {
@@ -153,6 +184,9 @@
             font-size: 28px;
             line-height: 36px;
             margin: 0px 50px;
+          }
+          @include mobile {
+            margin: 60px 0;
           }
         }
       }
@@ -168,6 +202,10 @@
           &:hover {
             box-shadow: $box-shadow-third;
           }
+        }
+        @include mobile {
+          flex-wrap: wrap;
+          margin: 0px;
         }
       }
     }

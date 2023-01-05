@@ -1,7 +1,10 @@
 @use "../abstracts/" as *;
 @forward "slider";
-@forward "proment-sec";
+@forward "provement-sec";
 @forward "start-today-sec";
+@forward "reach-customer-sec";
+@forward "send-mail-sec";
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
