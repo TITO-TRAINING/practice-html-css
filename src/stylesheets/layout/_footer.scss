@@ -1,13 +1,18 @@
 @use "../abstracts/" as *;
 .footer {
+  width: 100%;
+
   .container {
-    padding: 50px 0;
+    padding: 40px 15px;
     .top {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       margin: auto;
       padding: 50px 0;
+      @include mobile {
+        flex-direction: column;
+      }
 
       .logo {
         display: flex;
@@ -16,9 +21,15 @@
 
         span {
           font-family: $Second-font;
-          font-weight: 800;
-          font-size: 2rem;
+          font-weight: 900;
+          font-size: 26px;
+          line-height: 31px;
           color: $text-color;
+          @include tablet {
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 19px;
+          }
         }
       }
 
@@ -27,7 +38,17 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-evenly;
-
+        .contents-list {
+          flex-direction: row;
+          gap: 40px;
+        }
+        @include mobile {
+          width: 100%;
+          .contents-list {
+            flex-direction: column;
+            gap: 0;
+          }
+        }
         div {
           display: flex;
           flex-direction: column;
@@ -43,6 +64,11 @@
             color: $text-color-second;
             margin-bottom: 10px;
             text-align: start;
+            @include tablet {
+              font-weight: 700;
+              font-size: 12px;
+              line-height: 14px;
+            }
           }
         }
       }
@@ -54,7 +80,10 @@
       justify-content: space-between;
       margin: auto;
       padding: 30px 0;
-
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+      }
       span,
       a {
         color: $text-color-second;

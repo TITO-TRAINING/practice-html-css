@@ -2,20 +2,32 @@
 
 .main-heading-sec {
   padding: 100px 0;
+
   @include tablet {
     padding: 50px 0;
+  }
+  @include mobile {
+    padding: 100px 0;
+    margin: auto;
   }
   .container {
     display: flex;
     justify-content: flex-start;
     position: relative;
 
-    .main-girl {
-      position: absolute;
-      right: 0;
-      align-self: center;
-      width: 65%;
-      box-shadow: $box-shadow;
+    figure {
+      .main-girl {
+        width: 100%;
+        object-fit: cover;
+        box-shadow: $box-shadow;
+        position: absolute;
+        right: 0;
+        align-self: center;
+        width: 65%;
+        @include mobile {
+          width: 100%;
+        }
+      }
     }
 
     .header-part {
@@ -27,13 +39,16 @@
       flex-direction: column;
       z-index: 2;
       @include tablet {
-        width: 45%;
         margin-top: 14px;
         margin-left: 0px;
       }
+      @include mobile {
+        width: 100%;
+        margin: auto;
+      }
 
       .header {
-        font-family: $Second-font;
+        font-family: $primary-font;
         font-weight: 900;
         font-size: 59px;
         margin-bottom: 30px;
@@ -44,17 +59,24 @@
           margin-bottom: 30px;
           line-height: 46px;
         }
+        @include mobile {
+          width: 80%;
+          margin-top: -40px;
+        }
       }
 
       .header-p {
         font-family: $Second-font;
         font-weight: 500;
         font-size: 18px;
-        margin-bottom: 26px;
         @include tablet {
           font-weight: 500;
           font-size: 12px;
           line-height: 16px;
+        }
+        @include mobile {
+          padding-top: 70px;
+          margin-top: 20px;
         }
       }
 
@@ -62,6 +84,10 @@
         width: 100%;
         display: flex;
         justify-content: flex-start;
+        gap: 10px;
+        @include mobile {
+          justify-content: space-around;
+        }
 
         .try-now {
           padding: 15px 40px;
@@ -74,13 +100,13 @@
           line-height: 25px;
           transition: all 0.3s;
           @include tablet {
-            padding: 10px 0px;
-            width: 131px;
-            height: 42px;
+            padding: 15px 20px;
             font-weight: 900;
             font-size: 13px;
             line-height: 15px;
             text-align: center;
+          }
+          @include mobile {
           }
         }
 
@@ -94,11 +120,8 @@
           font-size: 18px;
           line-height: 25px;
           transition: all 0.3s;
-          margin: 0 40px;
           @include tablet {
             padding: 10px 0px;
-            width: 131px;
-            height: 42px;
             font-weight: 900;
             font-size: 13px;
             line-height: 15px;

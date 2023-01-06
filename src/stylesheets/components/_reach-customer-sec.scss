@@ -18,6 +18,11 @@
         width: 80%;
       }
     }
+    @include mobile {
+      video {
+        width: 100%;
+      }
+    }
 
     .header-part {
       position: absolute;
@@ -36,6 +41,11 @@
           font-weight: 900;
           font-size: 38px;
           line-height: 51px;
+        }
+        @include mobile {
+          font-weight: 900;
+          font-size: 22px;
+          line-height: 29px;
         }
       }
 
@@ -62,6 +72,11 @@
             font-weight: 900;
             font-size: 13px;
             line-height: 15px;
+          }
+          @include mobile {
+            font-weight: 900;
+            font-size: 6px;
+            line-height: 7px;
           }
 
           &:hover {
