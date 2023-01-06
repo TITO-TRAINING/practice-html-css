@@ -3,11 +3,17 @@
 header {
   .navbar {
     margin-top: 30px;
+
     .container-fluid {
-      padding: 0 100px;
+      width: 100%;
+      margin: auto;
+      padding: 0 70px;
       @include flex($align: center, $justify: space-between);
       @include tablet {
         padding: 0 50px;
+      }
+      @include mobile {
+        padding: 0 20px;
       }
       .navbar-brand {
         font-family: $Second-font;
@@ -35,6 +41,15 @@ header {
           font-size: 11px;
           line-height: 13px;
           font-weight: 800;
+        }
+        @include mobile {
+          .list-item {
+            display: none;
+          }
+          .sign-up-item {
+            margin: 0;
+            padding: 0;
+          }
         }
 
         &-item {

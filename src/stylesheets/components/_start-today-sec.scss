@@ -6,11 +6,16 @@
   .container {
     .start-today {
       width: 100%;
-      padding: 40px;
+      // padding: 40px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      @include mobile {
+        text-align: center;
+        // width: 40%;
+        margin: auto;
+      }
 
       h2 {
         font-family: $primary-font;
