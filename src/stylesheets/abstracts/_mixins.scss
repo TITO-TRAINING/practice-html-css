@@ -13,6 +13,11 @@
     @content;
   }
 }
+@mixin small {
+  @media screen and (max-width: $small) {
+    @content;
+  }
+}
 
 // Flex
 @mixin flex(

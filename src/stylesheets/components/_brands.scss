@@ -30,7 +30,6 @@
     .heading-links {
       margin-top: 40px;
       width: 100%;
-      flex-wrap: wrap;
 
       @include flex($align: center, $justify: space-between);
       a {
