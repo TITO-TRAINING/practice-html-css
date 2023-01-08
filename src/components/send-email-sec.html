@@ -1,33 +1,30 @@
 <section id="send-email-sec">
   <div class="container">
     <div class="cards">
-      <div>
+      <div class="card-case">
         <include
           src="./components/card-case-study.html"
           locals='{
-            "classCard" : "card1",
             "img": "../assets/images/Camile_photo.png",
             "Name": "Frankie",
             "Year": "Member since 2012"
             }'
         />
       </div>
-      <div>
+      <div class="card-case">
         <include
           src="./components/card-case-study.html"
           locals='{
-            "classCard" : "card2",
             "img": "../assets/images/Frankie_photo.png",
             "Name": "Frankie",
             "Year": "Member since 2016"
             }'
         />
       </div>
-      <div>
+      <div class="card-case">
         <include
           src="./components/card-case-study.html"
           locals='{
-            "classCard" : "card3",
             "img": "../assets/images/Elayne_photo.png",
             "Name": "Elayne",
             "Year": "Member since 2018"
@@ -39,12 +36,11 @@
       <h2 class="heading-learn">
         Learn how others are reaching their audience easier than ever before.
       </h2>
-      <div class="heading-input input-field">
-        <input type="text" name="" id="" placeholder="Enter your email" />
+      <div class="input-field">
+        <input type="text" name="" placeholder="Enter your email" />
         <button>JOIN OUR LIST</button>
         <p>Thanks! Email received.</p>
       </div>
     </div>
   </div>
-  <include src="./components/sec-brands.html"></include>
 </section>

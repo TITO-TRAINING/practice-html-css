@@ -14,21 +14,23 @@
         flex-direction: column;
       }
 
-      .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      .footer-title {
+        .logo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-        span {
-          font-family: $Second-font;
-          font-weight: 900;
-          font-size: 26px;
-          line-height: 31px;
-          color: $text-color;
-          @include tablet {
+          span {
+            font-family: $Second-font;
             font-weight: 900;
-            font-size: 16px;
-            line-height: 19px;
+            font-size: 26px;
+            line-height: 31px;
+            color: $text-color;
+            @include tablet {
+              font-weight: 900;
+              font-size: 16px;
+              line-height: 19px;
+            }
           }
         }
       }
@@ -48,6 +50,9 @@
             flex-direction: column;
             gap: 0;
           }
+        }
+        .list-footer {
+          display: flex;
         }
         div {
           display: flex;
@@ -84,7 +89,13 @@
         flex-direction: column;
         align-items: flex-start;
       }
-      span,
+      .footer-bottom__title {
+        span {
+          color: $text-color-second;
+          font-family: $Second-font;
+          font-weight: 700;
+        }
+      }
       a {
         color: $text-color-second;
         font-family: $Second-font;
