@@ -1,108 +1,157 @@
 @use "../abstracts/" as *;
 
 header {
-  .navbar {
-    width: 100%;
-    @include flex($direction: column);
-    margin-top: 30px;
+  .header_test {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    @include mobile {
+      display: block;
+    }
+  }
 
-    .container-fluid {
-      width: 100%;
-      margin: auto;
-      padding: 0 70px;
-      @include flex($align: center, $justify: space-between);
-      @include tablet {
-        padding: 0 50px;
-      }
-      @include mobile {
-        padding: 0 20px;
-      }
-      .navbar-brand {
-        font-family: $Second-font;
-        font-weight: 900;
-        font-size: 35px;
-        line-height: 41px;
-        color: $text-color;
-        @include tablet {
-          font-size: 22px;
-          line-height: 26px;
+  .main-heading-sec {
+    padding: 100px 0;
+
+    @include tablet {
+      padding: 50px 0;
+    }
+    @include mobile {
+      padding: 100px 0;
+    }
+    .container {
+      figure {
+        max-width: 70%;
+        margin-left: auto;
+        position: relative;
+        @include mobile {
+          max-width: 100%;
         }
-        &:hover {
-          color: $hover-color;
+        .main-girl {
+          width: 100%;
+          object-fit: cover;
+          box-shadow: $box-shadow;
         }
       }
-      .nav-list {
-        display: flex;
-        font-family: $Second-font;
-        font-size: 17px;
-        line-height: 20px;
-        font-weight: 800;
-        padding: 0;
-        margin: 0;
+
+      .header-part {
+        max-width: 41%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translate(0, -50%);
         @include tablet {
-          font-size: 11px;
-          line-height: 13px;
-          font-weight: 800;
+          max-width: 42%;
         }
         @include mobile {
-          .list-item {
-            display: none;
-          }
-          .sign-up-item {
-            margin: 0;
-            padding: 0;
-          }
-        }
-
-        &-item {
+          max-width: 100%;
+          height: 100%;
           display: flex;
           flex-direction: column;
-          align-items: center;
-          position: relative;
-          transition: all 0.3s;
-          a {
-            text-transform: uppercase;
-          }
-          .bottom-line {
-            background-color: $primary-color;
-            width: 90%;
-            height: 5px;
-            position: absolute;
-            bottom: 0;
-            transition: all 0.3s;
-          }
+          justify-content: space-between;
         }
-        .sign-up-item {
-          background-color: $background-color-second;
-          transition: all 0.3s;
-          margin-left: 20px;
 
-          a {
-            color: $background-color;
+        .header-title {
+          .header {
+            font-family: $primary-font;
+            font-weight: 900;
+            font-size: 59px;
+            margin-bottom: 30px;
+            line-height: 69px;
+            @include tablet {
+              font-weight: 900;
+              font-size: 38px;
+              margin-bottom: 30px;
+              line-height: 46px;
+            }
+            @include mobile {
+              width: 284px;
+              transform: translate(0, -35%);
+            }
           }
         }
+        .header-bottom {
+          .header-p {
+            font-family: $third-font;
+            font-weight: 500;
+            font-size: 18px;
+            margin-bottom: 30px;
+            @include tablet {
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 16px;
+            }
+            @include mobile {
+              margin: 0;
+            }
+          }
 
-        .sign-up-item:hover {
-          background-color: $background-color-hover;
-        }
+          .header-links {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
 
-        .sign-up-item:hover .nav-sign-up {
-          color: $hover-color;
-        }
+            .try-now {
+              padding: 15px 55px;
+              background-color: $primary-color;
+              border: 2px solid $primary-color;
+              color: $background-color;
+              font-family: $primary-font;
+              font-weight: 900;
+              font-size: 18px;
+              line-height: 25px;
+              transition: all 0.3s;
+              @include tablet {
+                padding: 15px 35px;
+                font-weight: 900;
+                font-size: 13px;
+                line-height: 15px;
+                text-align: center;
+              }
+              @include mobile {
+                padding: 15px 40px;
+              }
+            }
 
-        .nav-list-item:hover .bottom-line {
-          height: 100%;
-        }
+            .get-demo {
+              padding: 15px 55px;
+              background-color: $background-color-img;
+              color: $primary-color;
+              border: 2px solid $primary-color;
+              font-family: $primary-font;
+              font-weight: 900;
+              font-size: 18px;
+              line-height: 25px;
+              transition: all 0.3s;
+              @include tablet {
+                padding: 15px 35px;
+                font-weight: 900;
+                font-size: 13px;
+                line-height: 15px;
+                text-align: center;
+              }
+              @include mobile {
+                padding: 15px 40px;
+              }
+            }
 
-        .nav-link {
-          line-height: 20px;
-          color: $text-color;
-          z-index: 2;
-          margin: 12px;
-        }
+            .try-now:hover {
+              background-color: $background-color-hover;
+              color: $hover-color;
+              border-color: $bg-color-hover-second;
+            }
 
-        .nav-link:hover {
-          color: $background-color;
+            .get-demo:hover {
+              background-color: $background-color-hover;
+              color: $hover-color;
+              border-color: $bg-color-hover-second;
+            }
+          }
+          @include mobile {
+            transform: translate(0, 90%);
+          }
         }
       }
     }
