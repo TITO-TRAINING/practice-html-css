@@ -46,7 +46,7 @@
 
         .texts {
           padding: 30px;
-          font-family: $Second-font;
+          font-family: $third-font;
           p {
             font-size: 16px;
             line-height: 30px;
@@ -56,6 +56,10 @@
               font-weight: 500;
               font-size: 12px;
             }
+          }
+          a {
+            color: $text-color-third;
+            font-family: $Second-font;
           }
         }
       }
@@ -69,7 +73,7 @@
         max-width: 232px;
       }
       h2 {
-        font-family: $primary-font;
+        font-family: $Second-font;
         font-size: 44px;
         font-weight: 900;
         line-height: 48px;
@@ -82,7 +86,7 @@
       }
 
       p {
-        font-family: $Second-font;
+        font-family: $third-font;
         line-height: 26px;
         font-weight: 500;
         font-size: 19px;

@@ -13,24 +13,22 @@
       @include mobile {
         flex-direction: column;
       }
-
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       .footer-title {
-        .logo {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          span {
-            font-family: $Second-font;
+        span {
+          font-family: $Second-font;
+          font-weight: 900;
+          font-size: 26px;
+          line-height: 31px;
+          color: $text-color;
+          @include tablet {
             font-weight: 900;
-            font-size: 26px;
-            line-height: 31px;
-            color: $text-color;
-            @include tablet {
-              font-weight: 900;
-              font-size: 16px;
-              line-height: 19px;
-            }
+            font-size: 16px;
+            line-height: 19px;
           }
         }
       }
@@ -62,7 +60,7 @@
           text-align: start;
 
           a {
-            font-family: $Second-font;
+            font-family: $third-font;
             font-weight: 700;
             font-size: 19px;
             line-height: 22px;
@@ -90,15 +88,13 @@
         align-items: flex-start;
       }
       .footer-bottom__title {
-        span {
-          color: $text-color-second;
-          font-family: $Second-font;
-          font-weight: 700;
-        }
+        font-family: $third-font;
+        color: $text-color-second;
+        font-weight: 700;
       }
       a {
         color: $text-color-second;
-        font-family: $Second-font;
+        font-family: $third-font;
         font-weight: 700;
       }
     }

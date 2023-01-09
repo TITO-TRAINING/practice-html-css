@@ -1,0 +1,110 @@
+@use "../abstracts/" as *;
+.navbar {
+  width: 100%;
+  @include flex($direction: column);
+  margin-top: 30px;
+
+  .container-fluid {
+    width: 100%;
+    margin: auto;
+    padding: 0 70px;
+    @include flex($align: center, $justify: space-between);
+    @include tablet {
+      padding: 0 50px;
+    }
+    @include mobile {
+      padding: 0 20px;
+    }
+    .navbar-brand {
+      display: flex;
+      @include tablet {
+        font-size: 22px;
+        line-height: 26px;
+      }
+      &:hover {
+        color: $hover-color;
+      }
+      h1 {
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 41px;
+        font-family: $Second-font;
+        color: $text-color;
+      }
+    }
+    .nav-list {
+      display: flex;
+      font-family: $Second-font;
+      font-size: 17px;
+      line-height: 20px;
+      font-weight: 800;
+      padding: 0;
+      margin: 0;
+      @include tablet {
+        font-size: 11px;
+        line-height: 13px;
+        font-weight: 800;
+      }
+      @include mobile {
+        .list-item {
+          display: none;
+        }
+        .sign-up-item {
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        transition: all 0.3s;
+        a {
+          text-transform: uppercase;
+        }
+        .bottom-line {
+          background-color: $primary-color;
+          width: 90%;
+          height: 5px;
+          position: absolute;
+          bottom: 0;
+          transition: all 0.3s;
+        }
+      }
+      .sign-up-item {
+        background-color: $background-color-second;
+        transition: all 0.3s;
+        margin-left: 20px;
+
+        a {
+          color: $background-color;
+        }
+      }
+
+      .sign-up-item:hover {
+        background-color: $background-color-hover;
+      }
+
+      .sign-up-item:hover .nav-sign-up {
+        color: $hover-color;
+      }
+
+      .nav-list-item:hover .bottom-line {
+        height: 100%;
+      }
+
+      .nav-link {
+        line-height: 20px;
+        color: $text-color;
+        z-index: 2;
+        margin: 12px;
+      }
+
+      .nav-link:hover {
+        color: $background-color;
+      }
+    }
+  }
+}
