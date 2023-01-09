@@ -51,21 +51,23 @@
         justify-content: space-between;
       }
 
-      .header {
-        font-family: $primary-font;
-        font-weight: 900;
-        font-size: 59px;
-        margin-bottom: 30px;
-        line-height: 69px;
-        @include tablet {
+      .header-title {
+        .header {
+          font-family: $primary-font;
           font-weight: 900;
-          font-size: 38px;
+          font-size: 59px;
           margin-bottom: 30px;
-          line-height: 46px;
-        }
-        @include mobile {
-          width: 284px;
-          transform: translate(0, -35%);
+          line-height: 69px;
+          @include tablet {
+            font-weight: 900;
+            font-size: 38px;
+            margin-bottom: 30px;
+            line-height: 46px;
+          }
+          @include mobile {
+            width: 284px;
+            transform: translate(0, -35%);
+          }
         }
       }
       .header-bottom {

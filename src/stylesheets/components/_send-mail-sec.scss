@@ -10,67 +10,61 @@
         flex-direction: column;
       }
 
-      .card {
-        background-color: $background-color;
-        position: relative;
-        box-shadow: $box-shadow-second;
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          background: $background-color-third;
-        }
+      .card-case {
+        .card {
+          background-color: $background-color;
+          position: relative;
+          box-shadow: $box-shadow-second;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: $background-color-third;
+          }
 
-        img {
-          width: 100%;
-          height: 100%;
-        }
+          img {
+            width: 100%;
+            height: 100%;
+          }
 
-        .texts {
-          position: absolute;
-          z-index: 20;
-          top: 65%;
-          left: 10%;
-          display: flex;
-          flex-direction: column;
+          .texts {
+            position: absolute;
+            z-index: 20;
+            top: 65%;
+            left: 10%;
+            display: flex;
+            flex-direction: column;
 
-          .customer-name {
-            font-family: $Second-font;
-            color: $background-color;
-            font-size: 34px;
-            line-height: 40px;
-            font-weight: 900;
-            @include tablet {
-              font-size: 22px;
-              line-height: 26px;
+            .customer-name {
+              font-family: $Second-font;
+              color: $background-color;
+              font-size: 34px;
+              line-height: 40px;
               font-weight: 900;
+              @include tablet {
+                font-size: 22px;
+                line-height: 26px;
+                font-weight: 900;
+              }
             }
-          }
 
-          .year {
-            font-family: $Second-font;
-            color: $background-color;
-            font-size: 19px;
-            line-height: 22px;
-            font-weight: 700;
-            @include mobile {
-              font-size: 12px;
-              line-height: 14px;
+            .year {
+              font-family: $Second-font;
+              color: $background-color;
+              font-size: 19px;
+              line-height: 22px;
               font-weight: 700;
+              @include mobile {
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: 700;
+              }
             }
           }
         }
-      }
-
-      .card1 {
-        margin-bottom: auto;
-      }
-
-      .card2 {
-        margin-top: auto;
       }
     }
 
@@ -81,10 +75,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      // @include mobile {
-      //   padding: 20px 50px;
-      //   margin: 25px;
-      // }
       &-learn {
         font-family: $primary-font;
         font-size: 44px;

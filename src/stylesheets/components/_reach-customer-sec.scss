@@ -60,13 +60,15 @@
           outline: none;
           padding: 15px 40px;
           background-color: $background-color;
-          color: $primary-color;
           font-family: $Second-font;
           font-weight: 900;
           font-size: 21px;
           line-height: 25px;
           transition: all 0.3s;
           text-transform: uppercase;
+          a {
+            color: $primary-color;
+          }
           @include tablet {
             padding: 10px 25px;
             font-weight: 900;
