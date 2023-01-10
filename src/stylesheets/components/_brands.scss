@@ -30,7 +30,7 @@
     .heading-links {
       margin-top: 40px;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(5, 1fr);
       .img {
         display: flex;
         flex-direction: column;

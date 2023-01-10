@@ -17,6 +17,7 @@
     }
     .navbar-brand {
       display: flex;
+      align-items: center;
       @include tablet {
         font-size: 22px;
         line-height: 26px;
@@ -30,6 +31,10 @@
         line-height: 41px;
         font-family: $Second-font;
         color: $text-color;
+        @include tablet {
+          font-size: 22px;
+          line-height: 26px;
+        }
       }
     }
     .nav-list {
