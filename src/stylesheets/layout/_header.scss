@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 header {
-  .header_test {
+  .header__test {
     display: flex;
     justify-content: center;
     position: relative;
@@ -111,7 +111,7 @@ header {
                 text-align: center;
               }
               @include mobile {
-                padding: 15px 40px;
+                padding: 15px 30px;
               }
             }
 
@@ -133,7 +133,7 @@ header {
                 text-align: center;
               }
               @include mobile {
-                padding: 15px 40px;
+                padding: 15px 30px;
               }
             }
 
@@ -150,7 +150,7 @@ header {
             }
           }
           @include mobile {
-            transform: translate(0, 90%);
+            margin: -95px 0;
           }
         }
       }

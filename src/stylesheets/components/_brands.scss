@@ -30,7 +30,7 @@
     .heading-links {
       margin-top: 40px;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(5, 1fr);
       .img {
         display: flex;
         flex-direction: column;
@@ -46,7 +46,7 @@
       @include mobile {
         grid-template-columns: 1fr 1fr;
         .img {
-          padding: 10px;
+          // padding: 10px;
           &:nth-child(1) {
             order: 3;
           }
