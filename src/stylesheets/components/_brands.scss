@@ -46,7 +46,7 @@
       @include mobile {
         grid-template-columns: 1fr 1fr;
         .img {
-          padding: 10px;
+          // padding: 10px;
           &:nth-child(1) {
             order: 3;
           }
