@@ -83,7 +83,9 @@
 
           &:hover {
             background-color: $primary-color;
-            color: $background-color;
+            a {
+              color: $background-color;
+            }
           }
         }
       }
