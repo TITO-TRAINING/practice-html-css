@@ -45,6 +45,7 @@
       font-weight: 800;
       padding: 0;
       margin: 0;
+      gap: 10px;
       @include tablet {
         font-size: 11px;
         line-height: 13px;
@@ -81,7 +82,7 @@
       .sign-up-item {
         background-color: $background-color-second;
         transition: all 0.3s;
-        margin-left: 20px;
+        // margin-left: 20px;
 
         a {
           color: $background-color;
