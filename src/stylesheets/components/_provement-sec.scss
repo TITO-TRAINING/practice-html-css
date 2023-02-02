@@ -15,26 +15,25 @@
       min-height: 550px;
       display: flex;
       flex-direction: row;
+      gap: 30px;
       @include mobile {
         flex-direction: column;
-        gap: 30px;
       }
       .card1 {
         display: flex;
         align-items: flex-start;
         @include mobile {
-          margin-right: 102px;
+          margin-right: 25%;
         }
       }
       .card2 {
         display: flex;
         align-items: flex-end;
         @include mobile {
-          margin-left: 102px;
+          margin-left: 25%;
         }
       }
       .card {
-        margin: 0 25px;
         background-color: $background-color;
         position: relative;
         box-shadow: $box-shadow-second;

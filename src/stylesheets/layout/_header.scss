@@ -60,9 +60,7 @@ header {
             margin-bottom: 30px;
             line-height: 69px;
             @include tablet {
-              font-weight: 900;
               font-size: 38px;
-              margin-bottom: 30px;
               line-height: 46px;
             }
             @include mobile {
@@ -78,7 +76,6 @@ header {
             font-size: 18px;
             margin-bottom: 30px;
             @include tablet {
-              font-weight: 500;
               font-size: 12px;
               line-height: 16px;
             }
@@ -105,7 +102,6 @@ header {
               transition: all 0.3s;
               @include tablet {
                 padding: 15px 35px;
-                font-weight: 900;
                 font-size: 13px;
                 line-height: 15px;
                 text-align: center;
@@ -127,7 +123,6 @@ header {
               transition: all 0.3s;
               @include tablet {
                 padding: 15px 35px;
-                font-weight: 900;
                 font-size: 13px;
                 line-height: 15px;
                 text-align: center;
