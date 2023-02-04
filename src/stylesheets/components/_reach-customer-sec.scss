@@ -38,12 +38,10 @@
         margin-bottom: 30px;
         margin-bottom: 60px;
         @include tablet {
-          font-weight: 900;
           font-size: 38px;
           line-height: 51px;
         }
         @include mobile {
-          font-weight: 900;
           font-size: 22px;
           line-height: 29px;
         }
@@ -71,12 +69,10 @@
           }
           @include tablet {
             padding: 10px 25px;
-            font-weight: 900;
             font-size: 13px;
             line-height: 15px;
           }
           @include mobile {
-            font-weight: 900;
             font-size: 6px;
             line-height: 7px;
           }
