@@ -5,18 +5,14 @@
   .container {
     padding: 40px 15px;
     .top {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
+      @include flex($align: flex-start, $justify: space-between);
       margin: auto;
       padding: 50px 0;
       @include mobile {
         flex-direction: column;
       }
       .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex($align: center, $justify: center);
       }
       .footer-title {
         span {
@@ -34,9 +30,8 @@
 
       .contents {
         width: 60%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-evenly;
+        @include flex($align: flex-start, $justify: space-evenly);
+
         .contents-list {
           flex-direction: row;
           gap: 40px;
@@ -52,10 +47,11 @@
           display: flex;
         }
         div {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: start;
+          @include flex(
+            $align: flex-start,
+            $justify: start,
+            $direction: column
+          );
           text-align: start;
 
           a {
@@ -65,7 +61,6 @@
             line-height: 22px;
             color: $text-color-second;
             margin-bottom: 10px;
-            text-align: start;
             @include tablet {
               font-size: 12px;
               line-height: 14px;
@@ -76,9 +71,8 @@
     }
 
     .bottom {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include flex($align: center, $justify: space-between);
+
       margin: auto;
       padding: 30px 0;
       @include mobile {
