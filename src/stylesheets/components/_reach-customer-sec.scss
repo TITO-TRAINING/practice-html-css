@@ -5,9 +5,7 @@
     padding: 60px 0;
   }
   .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex($align: center, $justify: center);
     position: relative;
     video {
       align-self: center;
@@ -49,9 +47,7 @@
 
       .header-links {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex($align: center, $justify: center);
 
         .learn-how {
           border: none;

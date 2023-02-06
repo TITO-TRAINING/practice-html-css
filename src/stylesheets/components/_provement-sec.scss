@@ -3,25 +3,20 @@
 .provement-sec {
   margin: 50px 0;
   .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
-    flex-direction: row;
+    @include flex($align: center, $justify: center, $direction: row);
     @include mobile {
       flex-direction: column;
     }
     .cards {
       min-height: 550px;
-      display: flex;
-      flex-direction: row;
+      @include flex($direction: row);
       gap: 30px;
       @include mobile {
         flex-direction: column;
       }
       .card1 {
-        display: flex;
-        align-items: flex-start;
+        @include flex($align: flex-start);
         @include mobile {
           margin-right: 25%;
         }
@@ -52,7 +47,6 @@
             font-weight: 500;
             @include tablet {
               line-height: 16px;
-              font-weight: 500;
               font-size: 12px;
             }
           }
@@ -79,7 +73,6 @@
         margin: 30px 0;
         @include tablet {
           line-height: 31px;
-          font-weight: 900;
           font-size: 28px;
         }
       }
@@ -92,7 +85,6 @@
         font-style: normal;
         @include tablet {
           line-height: 16px;
-          font-weight: 500;
           font-size: 12px;
         }
       }
