@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 
 header {
+  margin-top: 30px;
   .header__test {
     @include flex($justify: center);
     position: relative;
