@@ -2,7 +2,6 @@
 .navbar {
   width: 100%;
   @include flex($direction: column);
-  margin-top: 30px;
 
   .container-fluid {
     width: 100%;
